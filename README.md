@@ -1,4 +1,4 @@
-# 📄 PDF Outline Extractor – Adobe "Connecting the Dots" Challenge (Round 1A)
+# 📄 PDF Structure Tool – Adobe "Connecting the Dots" Challenge (Round 1A)
 
 This project is built for **Round 1A** of the Adobe India Hackathon 2025 – *"Connecting the Dots Challenge"*. The goal is to reimagine the humble PDF as an intelligent, structured experience by extracting title and heading-level outlines from raw PDFs.
 
