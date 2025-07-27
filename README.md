@@ -73,6 +73,49 @@ python extractor.py
 
 ---
 
+## 🚧 Docker Support
+
+This project includes a **Dockerfile** to simplify execution and dependency setup across environments.
+
+### Dockerfile Purpose:
+
+* Creates a minimal Python environment using `python:3.10-slim`
+* Installs project dependencies from `requirements.txt`
+* Copies your script and required files into the container
+* Runs the `extractor.py` automatically
+
+### Sample Dockerfile
+
+```Dockerfile
+FROM python:3.10-slim
+
+WORKDIR /app
+
+COPY requirements.txt ./
+RUN pip install --no-cache-dir -r requirements.txt
+
+COPY . .
+
+CMD ["python", "extractor.py"]
+```
+
+### requirements.txt
+
+```
+PyMuPDF==1.23.7
+```
+
+### Build and Run Docker Image
+
+```bash
+docker build -t pdf-structure-tool .
+docker run --rm -v $(pwd)/input:/app/input -v $(pwd)/output:/app/output pdf-structure-tool
+```
+
+> Make sure to mount `input/` and `output/` folders when running the container.
+
+---
+
 ## 👨‍💼 Authors
 
 Made with ❤️ by:
