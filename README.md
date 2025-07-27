@@ -33,7 +33,7 @@ This solution:
 
 ## 🔄 Project Approach
 
-* **Multilingual Support**: Detects script type (English, Hindi, CJK, Arabic, etc.) using Unicode block names.
+* **Multilingual Support**: Detects script type (English, Hindi, CJK, Arabic, Japanese etc.) using Unicode block names.
 * **Heading Detection Logic**: Combines heuristics like font size, boldness, Y-position on page, and semantic keyword presence.
 * **Font Size-Based Hierarchy**: Top 3 most frequent font sizes are mapped to H1, H2, H3 levels.
 * **Title Extraction**: Selects the largest font text from page 1.
